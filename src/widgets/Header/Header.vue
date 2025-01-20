@@ -19,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import Slides from '../assets/images/Slides.svg';
-import Btn from './Btn.vue';
+import Slides from '../../entities/images/Slides.svg';
+import Btn from '../../features/Buton/Btn.vue';
 </script>
 
 <style lang="scss">
