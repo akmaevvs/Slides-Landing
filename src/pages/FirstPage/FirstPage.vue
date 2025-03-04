@@ -1,33 +1,40 @@
 <template>
-  <div class="first-page">
-    <div class="content-left">
-      <div class="content-left__title">Static website generator, create websites easily.</div>
-      <div class="content-left__content">
-        <div class="content-left__description">
-          Generate beautiful, animated, static websites with your creative direction in a matter of
-          minutes. Yes, minutes.
+  <div class="main-wrapper">
+    <div class="first-page">
+      <div class="content-left">
+        <div class="content-left__title">Static website generator, create websites easily.</div>
+        <div class="content-left__content">
+          <div class="content-left__description">
+            Generate beautiful, animated, static websites with your creative direction in a matter
+            of minutes. Yes, minutes.
+          </div>
+          <div class="content-left__btn">
+            <Btn>Open the App</Btn>
+            <Btn type="secondary">Pricing</Btn>
+          </div>
         </div>
-        <div class="content-left__btn">
-          <Btn>Open the App</Btn>
-          <Btn type="secondary">Pricing</Btn>
+      </div>
+      <div class="content-right">
+        <div class="content-right__img">
+          <img :src="Frame" alt="Frame" />
         </div>
       </div>
     </div>
-    <div class="content-right">
-      <div class="content-right__img">
-        <img :src="Frame" alt="Frame" />
-      </div>
+    <div>
+      <Icons />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Btn from '@/features/Buton/Btn.vue';
-import Frame from '@/entities/images/Frame.svg';
+import Btn from '@/shared/Button/Btn.vue';
+import Frame from '@/app/assets/images/Frame.svg';
+import Icons from '@/pages/FirstPage/widgets/IconWidget/Icons.vue';
 </script>
 <style lang="scss">
-.test {
+.main-wrapper {
   display: grid;
+  gap: 110px;
 }
 
 .first-page {
@@ -80,7 +87,7 @@ import Frame from '@/entities/images/Frame.svg';
   width: 200px;
   height: 200px;
   transform: translateY(-50%);
-  background-image: url('@/entities/images/Circle.svg');
+  background-image: url('@/app/assets/images/Circle.svg');
   background-size: cover;
   background-position: center;
   clip-path: inset(0 50% 0 0);

@@ -11,14 +11,14 @@
 </template>
 
 <script setup lang="ts">
-import Nike from '@/entities/images/Nike.svg';
-import A from '@/entities/images/A.svg';
-import Image from '@/entities/images/IMAGE.svg';
-import Ikea from '@/entities/images/Ikea.svg';
-import T from '@/entities/images/T.svg';
-import GoDaddy from '@/entities/images/GoDaddy.svg';
-import Disney from '@/entities/images/Disney.svg';
-import Nasa from '@/entities/images/Nasa.svg';
+import Nike from '@/app/assets/images/Nike.svg';
+import A from '@/app/assets/images/A.svg';
+import Image from '@/app/assets/images/IMAGE.svg';
+import Ikea from '@/app/assets/images/Ikea.svg';
+import T from '@/app/assets/images/T.svg';
+import GoDaddy from '@/app/assets/images/GoDaddy.svg';
+import Disney from '@/app/assets/images/Disney.svg';
+import Nasa from '@/app/assets/images/Nasa.svg';
 
 const icons = [
   { name: 'Nike', component: Nike },

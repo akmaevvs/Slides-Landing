@@ -19,8 +19,8 @@
 </template>
 
 <script setup lang="ts">
-import Slides from '../../entities/images/Slides.svg';
-import Btn from '../../features/Buton/Btn.vue';
+import Slides from '@/app/assets/images/Slides.svg';
+import Btn from '@/shared/Button/Btn.vue';
 </script>
 
 <style lang="scss">
@@ -43,6 +43,8 @@ import Btn from '../../features/Buton/Btn.vue';
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
 
     .header__nav {
       display: flex;
