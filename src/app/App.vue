@@ -5,6 +5,7 @@
       <FirstPage />
     </div>
     <ProjectPage />
+    <SliderPage />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import Header from '@/pages/FirstPage/widgets/Header/Header.vue';
 import FirstPage from '@/pages/FirstPage/FirstPage.vue';
 import ProjectPage from '@/pages/ProjectPage/ProjectPage.vue';
+import SliderPage from '@/pages/SliderPage/SliderPage.vue';
 </script>
 
 <style lang="scss">
@@ -26,9 +28,11 @@ import ProjectPage from '@/pages/ProjectPage/ProjectPage.vue';
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  gap: 50px;
 }
 
 .main {
+  margin-top: 200px;
   max-width: 1180px;
   width: 100%;
   flex: 1;
