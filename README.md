@@ -1,4 +1,2 @@
 # Slides-Landing
 Study Landing
-
-//

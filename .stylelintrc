@@ -1,0 +1,54 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/properties-order": [
+      [
+        {
+          "groupName": "Box Model",
+          "properties": [
+            "display",
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "z-index",
+            "flex",
+            "align-items",
+            "justify-content",
+            "width",
+            "height",
+            "margin",
+            "padding"
+          ]
+        },
+        {
+          "groupName": "Typography",
+          "properties": [
+            "font",
+            "font-size",
+            "font-weight",
+            "color",
+            "line-height",
+            "text-align"
+          ]
+        },
+        {
+          "groupName": "Visual",
+          "properties": [
+            "background",
+            "border",
+            "box-shadow",
+            "opacity"
+          ]
+        }
+      ],
+      {
+        "unspecified": "bottom"
+      }
+    ]
+  }
+}
