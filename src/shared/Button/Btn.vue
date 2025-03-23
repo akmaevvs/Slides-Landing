@@ -1,21 +1,21 @@
 <template>
-  <div ref="navBtnRef" class="btn" :class="colors" @click="handleClick">
+  <button ref="navBtnRef" class="btn" :class="colors" @click="handleClick">
     <slot />
-  </div>
+  </button>
 </template>
 <script setup lang="ts">
-import { computed, ref, watch } from "vue";
+import { computed, ref, watch } from 'vue';
 
 interface IProps {
   isClicked?: boolean;
-  type?: "primary" | "secondary";
+  type?: 'primary' | 'secondary';
 }
 
 const props = withDefaults(defineProps<IProps>(), {
   isClicked: false,
-  type: "primary",
+  type: 'primary',
 });
-const emit = defineEmits(["click", "update:isClicked"]);
+const emit = defineEmits(['click', 'update:isClicked']);
 
 const localIsClicked = ref(props.isClicked);
 
@@ -23,8 +23,8 @@ const navBtnRef = ref(null);
 
 const handleClick = () => {
   localIsClicked.value = !localIsClicked.value;
-  emit("update:isClicked", localIsClicked.value);
-  emit("click");
+  emit('update:isClicked', localIsClicked.value);
+  emit('click');
 };
 
 watch(
@@ -35,8 +35,8 @@ watch(
 );
 
 const colors = computed(() => {
-  if (props.type === "secondary") {
-    return "btn-secondary";
+  if (props.type === 'secondary') {
+    return 'btn-secondary';
   }
 });
 </script>
@@ -56,6 +56,7 @@ const colors = computed(() => {
   border-radius: 8px;
   color: #fff;
   background: #2164e1;
+  transition: background 0.3s;
 
   &:hover {
     background-color: #2a58b0;

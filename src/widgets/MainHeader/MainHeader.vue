@@ -1,10 +1,8 @@
 <template>
-  <div class="header">
+  <header class="header">
     <div class="inner-wrapper">
       <div class="header__content">
-        <div class="header__logo cursor-pointer">
-          <img :src="Slides" alt="slides" />
-        </div>
+        <img :src="Slides" alt="slides" class="cursor-pointer" />
         <div class="header__nav">
           <div class="header__nav-items">
             <a href="#">Pricing</a>
@@ -15,7 +13,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script setup lang="ts">
@@ -26,15 +24,11 @@ import Btn from '@/shared/Button/Btn.vue';
 <style lang="scss">
 .header {
   display: flex;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  position: sticky;
+  width: 100%;
   z-index: 1;
   align-items: center;
-  justify-content: space-between;
   height: 70px;
-  padding: 8px 0;
   background: #fff;
   box-shadow: 0 1px 1px 0 #00000012;
 

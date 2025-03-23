@@ -21,7 +21,7 @@
       </div>
     </div>
     <div>
-      <Icons />
+      <Clients />
     </div>
   </div>
 </template>
@@ -29,12 +29,12 @@
 <script setup lang="ts">
 import Btn from '@/shared/Button/Btn.vue';
 import Frame from '@/app/assets/images/Frame.svg';
-import Icons from '@/pages/FirstPage/widgets/IconWidget/Icons.vue';
+import Clients from '@/pages/FirstPage/widgets/IconWidget/Clients.vue';
 </script>
 <style lang="scss">
 .main-wrapper {
   display: grid;
-  gap: 110px;
+  gap: 300px;
 }
 
 .first-page {

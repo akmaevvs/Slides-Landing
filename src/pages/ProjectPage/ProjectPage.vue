@@ -10,8 +10,8 @@
       project.
     </div>
     <div class="project-description">
-      The Projects are here! Keep and maintain multiple pages in separate projects. <br />
-      Edit the content, upload media, add meta-tags and much more...
+      The Projects are here! Keep and maintain multiple pages in separate projects. <br />` Edit the
+      content, upload media, add meta-tags and much more...
     </div>
     <button class="project-button">Start New Project →</button>
 

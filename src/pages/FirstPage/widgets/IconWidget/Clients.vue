@@ -11,14 +11,14 @@
 </template>
 
 <script setup lang="ts">
-import Nike from '@/app/assets/images/Nike.svg';
-import A from '@/app/assets/images/A.svg';
-import Image from '@/app/assets/images/IMAGE.svg';
-import Ikea from '@/app/assets/images/Ikea.svg';
-import T from '@/app/assets/images/T.svg';
-import GoDaddy from '@/app/assets/images/GoDaddy.svg';
-import Disney from '@/app/assets/images/Disney.svg';
-import Nasa from '@/app/assets/images/Nasa.svg';
+import Nike from '@/pages/FirstPage/widgets/IconWidget/images/Nike.svg';
+import A from '@/pages/FirstPage/widgets/IconWidget/images/A.svg';
+import Image from '@/pages/FirstPage/widgets/IconWidget/images/IMAGE.svg';
+import Ikea from '@/pages/FirstPage/widgets/IconWidget/images/Ikea.svg';
+import T from '@/pages/FirstPage/widgets/IconWidget/images/T.svg';
+import GoDaddy from '@/pages/FirstPage/widgets/IconWidget/images/GoDaddy.svg';
+import Disney from '@/pages/FirstPage/widgets/IconWidget/images/Disney.svg';
+import Nasa from '@/pages/FirstPage/widgets/IconWidget/images/Nasa.svg';
 
 const icons = [
   { name: 'Nike', component: Nike },
@@ -36,7 +36,6 @@ const icons = [
 .content-icons {
   display: flex;
   justify-content: space-between;
-  padding-top: 200px;
   gap: 60px;
 }
 </style>
